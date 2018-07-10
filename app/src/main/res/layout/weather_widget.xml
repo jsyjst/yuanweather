@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rv_app_widget"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/widget_margin">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <TextClock
+            android:id="@+id/tc_widget_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:textSize="70dp" />
+
+        <TextView
+            android:id="@+id/tv_widget_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tc_widget_time"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="50dp"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_widget_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_widget_date"
+            android:layout_marginLeft="80dp"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_below="@+id/tv_widget_date"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/tv_widget_city"
+            android:src="@drawable/iv_location" />
+
+
+    <RelativeLayout
+        android:id="@+id/linear_widget_line"
+        android:layout_width="1px"
+        android:layout_height="125dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_toLeftOf="@+id/iv_widget_code"
+        android:background="#fff" />
+
+    <ImageView
+        android:id="@+id/iv_widget_code"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/iv_0" />
+
+    <TextView
+        android:id="@+id/tv_widget_temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_widget_code"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/linear_widget_line"
+        android:textColor="#fff"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/tv_widget_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_widget_temperature"
+        android:layout_marginLeft="25dp"
+        android:layout_toRightOf="@id/linear_widget_line"
+        android:textColor="#fff"
+        android:textSize="17sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

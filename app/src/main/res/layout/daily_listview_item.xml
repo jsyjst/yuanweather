@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:layout_margin="15dp"
+ >
+
+    <TextView
+        android:id="@+id/tv_daily_date"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:textColor="#fff"
+        android:textSize="17sp" />
+
+
+
+
+        <ImageView
+            android:id="@+id/iv_daily_weather"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:scaleType="fitCenter"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@id/tv_daily_date"
+            android:layout_marginLeft="20dp"
+            android:background="@color/colorPrimaryDark"/>
+        <TextView
+            android:id="@+id/tv_daily_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/iv_daily_weather"
+            android:textColor="#fff"
+            android:textSize="17sp" />
+
+
+
+    <TextView
+        android:id="@+id/tv_daily_highLow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:textColor="#fff"
+        android:textSize="17sp" />
+
+</RelativeLayout>

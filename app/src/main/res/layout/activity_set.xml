@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_set_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/btn_back"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/btn_set_back"
+            android:text="设置"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#80FFFFFF" />
+
+
+    <RelativeLayout
+        android:id="@+id/rv_set_switch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:id="@+id/btn_autoUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:text="自动更新"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"/>
+        <ImageView
+            android:id="@+id/btn_set_switch"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/switch_close"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#80FFFFFF"
+            android:layout_below="@+id/btn_autoUpdate"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rv_set_updateSpace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+
+        <TextView
+            android:id="@+id/btn_updateSpace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:text="更新间隔"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#80FFFFFF"
+            android:layout_below="@+id/btn_updateSpace"/>
+
+        <ImageView
+            android:id="@+id/iv_go"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:src="@drawable/iv_go"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/tv_update_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="#fff"
+            android:text="1 小时"
+            android:layout_toLeftOf="@+id/iv_go"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

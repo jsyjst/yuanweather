@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimaryDark">
+
+    <TextView
+        android:id="@+id/tv_manage_city_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:text="潮州"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/iv_manage_city_location"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/iv_location"
+        android:layout_toRightOf="@id/tv_manage_city_name"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_manage_city_temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="32"
+            android:layout_marginTop="10dp"
+            android:textColor="#fff"
+            android:textSize="40sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_manage_city_temperature"
+            android:text="℃"
+            android:textSize="20dp"
+            android:layout_marginTop="15dp"
+            android:textColor="#fff" />
+
+        <TextView
+            android:id="@+id/tv_manage_city_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_manage_city_temperature"
+            android:layout_centerHorizontal="true"
+            android:textColor="#fff"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="10dp"
+            />
+    </RelativeLayout>
+</RelativeLayout>
